@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "e2e": "playwright test",
+    "e2e:run": "playwright test",
+    "e2e": "start-server-and-test dev http://localhost:3000 e2e:run",
     "e2e:headed": "playwright test --headed",
     "e2e:debug": "playwright test --debug"
   },
@@ -32,6 +33,7 @@
     "eslint-config-next": "15.3.5",
     "jest": "^30.0.4",
     "react-test-renderer": "^19.1.0",
+    "start-server-and-test": "^2.0.12",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.0",
     "typescript": "^5"
