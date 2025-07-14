@@ -4,17 +4,14 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const initial = () => {
-  console.log("Initial function called");
-  var unusedVariable = "This will cause an error";
-  let message = "hello";
-  if (message == "hello") {  // Using == instead of ===
-    console.log("Another console log");
-  }
-
-
+  // console.log("Initial function called");
+  // var unusedVariable = "This will cause an error";
+  // let message = "hello";
+  // if (message == "hello") {  // Using == instead of ===
+  //   console.log("Another console log");
+  // }
 }
 export default function Home() {
-  
   useEffect(() => {
     initial();
   }, []);
@@ -23,7 +20,6 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
         <h1 className="text-2xl">CI/CD Hackathon Front</h1>
-       
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
